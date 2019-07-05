@@ -20,7 +20,7 @@ class App extends React.Component {
     this.state={
       input: '',
       imageUrl: '',
-      box: {}
+      box: {},
     };
   }
 
@@ -76,8 +76,8 @@ class App extends React.Component {
       <div className="App">  
           <Particles className='particles' params={particlesOptions} />
           <Navigation />
-          <Logo />
           <Signin />
+          <Logo />
           <Rank />
           <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit} />
           <FaceRecognition imageUrl={this.state.imageUrl} box={this.state.box}/>
